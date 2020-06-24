@@ -2,11 +2,15 @@ import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
+import os
+
 import numpy
 from tensorflow.keras import Sequential
 import tensorflow as tf
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import RMSprop
+
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 import random
 import json

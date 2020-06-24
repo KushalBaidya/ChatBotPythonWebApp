@@ -54,9 +54,19 @@
         "responses": ["I can tell you about the weather today :)"],
         "context": [""]
     },
-    {"tag": "weather",
+    {"tag": "weathertoday",
         "patterns": ["weather?", "Temperature?", "what is todays Climate", "How Hot it is today?","What is the weather today?"],
         "responses": ["it's 30 degree Celcius"],
+        "context_set": ""
+       },
+       {"tag": "weathertomorrow",
+        "patterns": ["weather tomorrow?", "Temperature tomorrow ?", "what will be tomorrows Climate", "How Hot will it be tomorrow?","What is the weather tomorrow?"],
+        "responses": ["it is estimated to be 40 degree Celcius"],
+        "context_set": ""
+       },
+       {"tag": "schedule",
+        "patterns": ["when is my scedule ?","schedule today?"],
+        "responses": ["10AM"],
         "context_set": ""
        }
 
